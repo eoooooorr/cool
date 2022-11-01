@@ -1,20 +1,81 @@
 <!DOCTYPE html>
-<HTML>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </hrad>
-  <body>
-    <center>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>首頁</title>
+    </head>
+        <nav>
+            <ul class="flex-nav">
+                <li><a href="https://eoooooorr.github.io/cool/">首頁</a></li>
+                <li><a href="https://eoooooorr.github.io/cry/">自我介紹</a></li>
+                <li><a href="https://eoooooorr.github.io/i-dont-know/">九九乘法表</a></li>
+                <li><a href="https://eoooooorr.github.io/AHHH/">DIV排版</a></li>
+            </ul>
+        </nav>
+  <center>
     <p>學號:1111032018</p>
     <p>班級:資工二甲</p>
     <p>姓名:胥詠策</p>
-    <p>
-      <a href="https://eoooooorr.github.io/cry/">自我介紹+照片表格</a>
-    </p>
-      <a href="https://eoooooorr.github.io/i-dont-know/">九九乘法表</a>
-    </p>
-    </p>
-      <a href="https://eoooooorr.github.io/AHHH/">DIV排版</a>
-    </p>
-  </body>
-  
+</html>
+<style>
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+
+h1, h2 {
+    margin: 0;
+    padding: 34px 0 14px 40px;
+}
+
+nav > ul {
+    background-color: rgb(230, 230, 230);
+    list-style: none;   /* 移除項目符號 */
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: inherit; /* 移除超連結顏色 */
+    display: block; /* 讓 <a> 填滿 <li> */
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;  /* 移除超連結底線 */
+}
+
+/* 滑鼠移到 <a> 時變成深底淺色 */
+nav li:hover {
+    background-color: rgb(115, 115, 115);
+    color: white;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.inline-block-nav {
+    text-align: center;
+    font-size: 0;   /* 移除 <li> 之間的空隙 */
+}
+
+.inline-block-nav > li {
+    display: inline-block;
+}
+
+.float-nav-outer {
+    background-color: rgb(230, 230, 230);
+    overflow: hidden;
+}
+
+.float-nav {
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+.float-nav > li {
+    float: left;
+    position: relative;
+    right: 50%;
+}
+</style>
